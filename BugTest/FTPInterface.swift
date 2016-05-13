@@ -9,23 +9,10 @@
 import Foundation
 import NMSSH
 
-
-
-class TMonkey {
-    
-    func test() {
-        testFTP()
-    }
-    
-}
-
-
-
-
 /**
  SFTP Data Transfer Provider is a way of getting SFTP Data
  */
-class SFTPFileDataProvider {
+public class SFTPFileDataProvider {
     
     private var privateKeyPath: String?
     private var publicKeyPath: String?
@@ -59,6 +46,13 @@ class SFTPFileDataProvider {
     }
     
     public static func test() {
+        testFTP()
+    }
+}
+
+
+class TMonkey {
+    func test() {
         testFTP()
     }
 }

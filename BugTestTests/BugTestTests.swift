@@ -28,5 +28,7 @@ class BugTestTests: XCTestCase {
         
         let t = TMonkey()
         t.test()
+        
+        testFTP()
     }
 }
