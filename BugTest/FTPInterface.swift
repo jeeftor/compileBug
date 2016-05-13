@@ -58,13 +58,13 @@ class SFTPFileDataProvider {
      
      - returns: a session that is hopefully connected
      */
-    private func ftpSession() -> NMSFTP {
+     func ftpSession() -> NMSFTP {
         let c = NMSSHSession.connectToHost(self.host, port: self.port, withUsername: self.userName)
         c.authenticateByPassword("password")
         return NMSFTP.connectWithSession(c)
     }
     
-      
+    
     public static func test() {
         testFTP()
     }
