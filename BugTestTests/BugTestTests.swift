@@ -16,7 +16,14 @@ class BugTestTests: XCTestCase {
 //    func testCompileIssue() {
 //        let sftp = SFTPFileDataProvider(host: "test.rebex.net:22", userName: "demo")
 //    }
+//    
     
+    // UNCOMMENT TO HAVE A BUILD FAILURE
+//    func testStatic() {
+//        SFTPFileDataProvider.test()
+//    }
+
+    // WILL COMPILE
     func test2Good() {
         
         let t = TMonkey()

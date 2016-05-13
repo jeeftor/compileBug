@@ -44,12 +44,6 @@ class SFTPFileDataProvider {
         self.userName = userName
         self.host = host
         self.port = port
-        
-        defer {
-            let bundle = NSBundle(forClass:object_getClass(self))
-//            privateKeyPath = bundle.pathForResource("id_rsa", ofType: "")!
-//            publicKeyPath = bundle.pathForResource("id_rsa", ofType: "pub")!
-        }
     }
     
     
@@ -63,7 +57,6 @@ class SFTPFileDataProvider {
         c.authenticateByPassword("password")
         return NMSFTP.connectWithSession(c)
     }
-    
     
     public static func test() {
         testFTP()
